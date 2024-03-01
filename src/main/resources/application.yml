@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;Mode=MySQL
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: false
+        dialect: org.hibernate.dialect.MariaDBDialect
+  h2:
+    console:
+      enabled: true
